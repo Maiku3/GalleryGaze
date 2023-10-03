@@ -1,0 +1,21 @@
+html
+	head
+		title Register New Account
+		link(rel='stylesheet' href='http://localhost:3000/css/register.css')
+	body
+		include ../partials/headers.pug
+		header 
+			h1 Register New Account
+		div#error(style="color:red")
+		br
+		div
+			| Username: 
+			input#name(type="textbox")
+		br
+		div
+			| Password: 
+			input#pass(type="password")
+		br
+		div
+			button#submit(type="button") Register
+		script(src="/js/register.js")

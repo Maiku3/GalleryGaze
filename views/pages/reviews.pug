@@ -1,0 +1,23 @@
+// Referenced from storecompleted demo
+html
+    head
+    title Reviews 
+    link(rel='stylesheet' href='http://localhost:3000/css/profile.css')
+body
+    include ../partials/headers
+    br
+    header 
+            h1 Reviews
+            h3 click on each review to see more
+    each review in reviews
+        a(href="/reviews/" + review._id) Review: #{review.review} #{review.rating}/5
+        br
+            
+    if current > 1
+        - let url = "/reviews?page=" + (current-1)
+        - if(qstring.length > 0){ url += "&" + qstring; }
+        a(href=url) Previous
+        | 
+    - url = "/reviews?page=" + (current+1)
+    - if(qstring.length > 0){ url += "&" + qstring; }
+    a(href=url) Next

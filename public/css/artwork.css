@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+header {
+    background-color: darkgrey;
+    padding: 25px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+img {
+    width: auto;
+    height: 70%;
+    margin-bottom: 5px;
+    float: left;
+}
+
+#info {
+    text-align: center;
+}
+

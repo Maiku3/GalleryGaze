@@ -1,0 +1,34 @@
+html
+    head
+        title Open Gallery Artworks
+        link(rel='stylesheet' href='http://localhost:3000/css/home.css')
+body
+    include ../partials/headers
+    br
+    header 
+        h1 Artworks
+    if current > 1
+        - let url = "/artworks?page=" + (current-1)
+        - if(qstring.length > 0){ url += "&" + qstring; }
+        a(href=url style="font-size:20px") Previous
+        | 
+    - url = "/artworks?page=" + (current+1)
+    - if(qstring.length > 0){ url += "&" + qstring; }
+    a(href=url style="font-size:20px") Next
+    
+    .gallery
+        each artwork in artworks
+            .gallery-item
+                a(href="/artworks/" + artwork._id)
+                    img.image(src=artwork.image alt=artwork.name style='width:100%')
+                    .middle
+                        .text #{artwork.name}
+            
+    if current > 1
+        - let url = "/artworks?page=" + (current-1)
+        - if(qstring.length > 0){ url += "&" + qstring; }
+        a(href=url style="font-size:20px") Previous
+        | 
+    - url = "/artworks?page=" + (current+1)
+    - if(qstring.length > 0){ url += "&" + qstring; }
+    a(href=url style="font-size:20px") Next

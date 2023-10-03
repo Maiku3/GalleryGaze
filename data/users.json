@@ -1,0 +1,74 @@
+[
+    {
+        "username": "Corrine Hunt",
+        "password": "password",
+        "artist": true,
+        "following": []
+    },
+    {
+        "username": "Luke",
+        "password": "password",
+        "artist": true,
+        "following": []
+    },
+    {
+        "username": "Anatoliy Kushch",
+        "password": "password",
+        "artist": true,
+        "following": []
+    },
+    {
+        "username": "Lea Roche",
+        "password": "password",
+        "artist": true,
+        "following": []
+    },
+    {
+        "username": "Jim Dine",
+        "password": "password",
+        "artist": true,
+        "following": []
+    },
+    {
+        "username": "Shari Hatt",
+        "password": "password",
+        "artist": true,
+        "following": []
+    },
+    {
+        "username": "Sebastian McKinnon",
+        "password": "password",
+        "artist": true,
+        "following": []
+    },
+    {
+        "username": "Kimika Hara",
+        "password": "password",
+        "artist": true,
+        "following": []
+    },
+    {
+        "username": "Keith Mallett",
+        "password": "password",
+        "artist": true,
+        "following": []
+    },
+    {
+        "username": "ArtMind",
+        "password": "password",
+        "artist": true,
+        "following": []
+    },
+    {
+        "username": "Vincent Van Gogh",
+        "password": "password",
+        "artist": true,
+        "following": []
+    },
+    {
+        "username": "Claude Monet",
+        "password": "password",
+        "artist": true,
+        "following": []
+    }
+]

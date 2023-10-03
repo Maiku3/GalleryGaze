@@ -1,0 +1,25 @@
+html
+    head
+        title Search Artworks
+        link(rel='stylesheet' href='http://localhost:3000/css/artwork.css')
+    body
+        include ../partials/headers.pug
+        header 
+            h1 Search Artworks
+        br
+        div
+            form(action="/artworks" method="GET")
+                input(type="text" name="name" placeholder="Search by Artwork Name")
+                input(type="submit" value="Search")
+
+            form(action="/artworks" method="GET")
+                input(type="text" name="artist" placeholder="Search by Artist Name")
+                input(type="submit" value="Search")
+
+            form(action="/artworks" method="GET")
+                input(type="text" name="category" placeholder="Search by Category")
+                input(type="submit" value="Search")
+                
+            form(action="/artworks" method="GET")
+                input(type="text" name="medium" placeholder="Search by Medium")
+                input(type="submit" value="Search")

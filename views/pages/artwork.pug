@@ -1,0 +1,50 @@
+html
+	head
+		title #{artwork.name}
+		link(rel='stylesheet' href='http://localhost:3000/css/artwork.css')
+		script(src='http://localhost:3000/js/artwork.js')
+	body
+		include ../partials/headers.pug
+		header 
+			h1 #{artwork.name}
+			h2 by: 
+				a(href='/users/' + user._id) #{user.username}
+	#image 
+		img(src=artwork.image)
+	#info
+		h3 Year: 
+		p #{artwork.year}
+		h3 Category: 
+		p 
+			a(href="/artworks?category=" + artwork.category) #{artwork.category}
+		h3 Medium: 
+		p 
+			a(href="/artworks?medium=" + artwork.medium) #{artwork.medium}
+		h3 Description: 
+		p #{artwork.description}
+		h3 Reviews:
+		if artwork.reviews.length == 0
+			p No reviews yet!
+		else
+			div
+				a(href="/reviews?artwork=" + artwork._id) See Reviews
+			br
+		// add review text box
+		if session && session.username != user.username 
+			// rating out of 5
+			div
+				| Rating: 
+				select#rating
+					option(value="1") 1
+					option(value="2") 2
+					option(value="3") 3
+					option(value="4") 4
+					option(value="5") 5
+			div
+				textarea#review(type="text" placeholder="Write a review...")
+			div
+				br
+				button#addReview(type="button") Add Review
+		
+		
+		

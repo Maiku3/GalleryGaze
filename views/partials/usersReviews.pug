@@ -1,0 +1,11 @@
+extends /pages/profile.pug
+
+block reviewed
+    div
+        if reviews.length == 0
+            p No reviews.
+        else
+            p Reviewed:
+                each elem in reviews
+                    h3 
+                        a(href="/reviews/" + elem._id) Review on #{elem.artwork.name}

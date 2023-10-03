@@ -1,0 +1,40 @@
+html
+	head
+		title #{user.username}
+		link(rel='stylesheet' href='http://localhost:3000/css/profile.css')
+		script(src="/js/user.js")
+	body
+		include ../partials/headers.pug
+		header 
+			h1 #{user.username} 
+			if session && session.loggedin && session.userid != user._id.toString()
+				if following
+					button#unfollow(type="button" onclick='unfollow()') Unfollow
+				else
+					button#follow(type="button" onclick='follow()') Follow
+			if session.userid == user._id.toString()
+				if !session.artist
+					button#becomeArtist(type="button" onclick="becomeArtist()" style="margin-left:10; border:none; cursor:pointer") Become an Artist
+				else 
+					button#unbecomeArtist(type="button" onclick="becomePatron()" style="margin-left:10; border:none; cursor:pointer") Switch to Patron
+		ul
+			if user.artist || user.posts.length > 0
+				li
+					a(href="/users/" + user._id + "/artworks") Artworks: #{user.posts.length}
+			li
+				a(href="/users/" + user._id + "/followers") Followers: #{user.followers.length}
+			li
+				a(href="/users/" + user._id + "/following") Following: #{user.following.length}
+			li
+				a(href="/users/" + user._id + "/reviewed") Reviewed Artworks 
+			li 
+				a(href="/users/" + user._id + "/reviews") Reviews
+		block artworks
+		block followings
+		block followers
+		block reviewed
+		block reviews
+	
+
+
+

@@ -1,0 +1,10 @@
+extends /pages/profile.pug
+
+block artworks
+    .gallery
+        each post in user.posts
+            .gallery-item
+                a(href="/artworks/" + post.artwork._id)
+                    img.image(src=post.artwork.image)
+                    .middle
+                        .text #{post.artwork.name}

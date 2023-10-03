@@ -1,0 +1,18 @@
+html
+    head
+        title #{review.user.username}'s Review of #{review.artwork.name} 
+        link(rel='stylesheet' href='http://localhost:3000/css/artwork.css')
+        script(src="/js/deleteReview.js")
+body
+    include ../partials/headers
+    br
+    
+    p Reviewer: 
+        a(href="/users/" + review.user._id)= review.user.username
+    p Artwork:
+        a(href="/artworks/" + review.artwork._id)= review.artwork.name
+    p Rating: #{review.rating}
+    p Review: #{review.review}
+    
+    if session && session.username == review.user.username
+        button#delete(type="button") Delete Review

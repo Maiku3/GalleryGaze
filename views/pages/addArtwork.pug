@@ -1,0 +1,41 @@
+html
+	head
+		title Post New Artwork
+		link(rel='stylesheet' href='http://localhost:3000/css/register.css')
+	body
+		include ../partials/headers.pug
+		header 
+			h1 Post New Artwork
+		div#error(style="color:red")
+		br
+		div
+		| Artist: 
+		input#artist(type="text" value=session.username readonly)
+		br
+		br
+		div
+			| Artwork Name: 
+			input#name(type="text")
+		br
+		div
+			| Year Created: 
+			input#year(type="text")
+		br
+		div
+			| Description:
+			input#description(type="text")
+		br
+		div
+			| Medium:
+			input#medium(type="text")
+		br
+		div
+			| Category:
+			input#category(type="text")
+		br
+		div
+			| Image URL:
+			input#image(type="text")
+		br
+		button#add(type="button") Post
+		script(src="/js/addArtwork.js")
