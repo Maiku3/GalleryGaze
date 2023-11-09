@@ -6,7 +6,7 @@
 ![Pug](https://img.shields.io/badge/Pug-FFF?style=for-the-badge&logo=pug&logoColor=A86454)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
-## What is this application?
+## Introduction
 This is a full-stack web application that I have developed using Pug Template engine for the front-end, and Node.js and Express.js for the back-end. The database that I used is MongoDB with Mongoose.
 
 ## Demo Video:
