@@ -31,4 +31,5 @@ node server.js
 http://localhost:3000/home to get to the home page
 
 ## Potential Improvements
-- Utilizing a framework like ReactJS as it is modular and will make the UI better.
+- Utilizing a modular framework like ReactJS
+- Improving the UI
