@@ -18,12 +18,11 @@ Here is a demo of the website: [https://youtu.be/1O0RyE4KtGs](https://youtu.be/1
 ```
 npm install
 ```
-2. Make sure mongodb is running, then initialize the database for the web application with
-the command: 
+2. Make sure MongoDB is running, then initialize the database for the web application:
 ```
 node database-initializer.js
 ```
-3. Now run the server with the command: 
+3. Run the server:
 ```
 node server.js
 ```
