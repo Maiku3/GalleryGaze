@@ -12,9 +12,9 @@ A full-stack web application, developed using Pug Template engine for the front-
 ## Demo Video:
 Here is a demo of the website: [https://youtu.be/1O0RyE4KtGs](https://youtu.be/1O0RyE4KtGs)
 
-## How to setup and run the application:
+## How to set up and run the application:
 ### To be able to run this locally, you will need to already have MongoDB set up.
-1. Download all the modules with the command: 
+1. Download all the modules: 
 ```
 npm install
 ```
@@ -26,7 +26,7 @@ node database-initializer.js
 ```
 node server.js
 ```
-4. It will be on hosted on localhost with port 3000, type http://localhost:3000/ or
+4. It will be hosted on localhost with port 3000, type http://localhost:3000/ or
 http://localhost:3000/home to get to the home page
 
 ## Potential Improvements
