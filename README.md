@@ -7,7 +7,7 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
 ## Introduction
-A full-stack web application, developed using Pug Template engine for the front-end, MongoDB for the database, and Express.js for the API server.
+A full-stack web application, developed using Pug Template engine for the front-end and Node.js for the back-end with MongoDB for the database and Express.js for the API server.
 
 ## Demo Video:
 Here is a demo of the website: [https://youtu.be/1O0RyE4KtGs](https://youtu.be/1O0RyE4KtGs)
