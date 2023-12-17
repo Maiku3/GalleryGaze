@@ -19,7 +19,7 @@ Follow the steps below to get a local copy up and running.
 
 1. Clone the repo:
 ```sh
-git clone https://github.com/github_username/repo_name.git
+git clone https://github.com/Maiku3/GalleryGaze.git
 ```
 2. Download all the modules: 
   ```sh
